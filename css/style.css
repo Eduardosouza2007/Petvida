@@ -1,0 +1,1203 @@
+/* =====================================================
+   PETVIDA — CSS CONSOLIDADO
+   ===================================================== */
+
+
+/* =====================================================
+   VARIÁVEIS
+   ===================================================== */
+
+:root {
+    --vermelho: #d92732;
+    --vermelho-escuro: #a91e29;
+    --branco: #ffffff;
+    --cinza-claro: #f3f4f4;
+    --cinza: #737373;
+    --preto: #252525;
+    --rosa-claro: #fff5f5;
+    --sombra: 0 4px 15px rgba(0, 0, 0, 0.10);
+    --raio: 12px;
+}
+
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--branco);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   CABEÇALHO E MENU
+   ===================================================== */
+
+.cabecalho {
+    width: 100%;
+    background: var(--vermelho);
+}
+
+/* Estrutura principal da navegação */
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+/* LOGO */
+
+.logo {
+    color: var(--branco);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #ffdede;
+}
+
+
+/* MENU */
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.25s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: #ffdede;
+}
+
+
+/* CORREÇÃO PARA CABEÇALHOS SEM CLASSES ESPECÍFICAS */
+
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+header nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.25s;
+}
+
+header nav a:hover {
+    color: #ffdede;
+}
+
+/* Caso o menu utilize UL e LI */
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+
+/* BOTÃO AGENDAR */
+
+.botao-agendar {
+    display: inline-block;
+
+    background: var(--branco);
+    color: var(--vermelho);
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    font-weight: 700;
+    white-space: nowrap;
+
+    transition: 0.25s;
+}
+
+.botao-agendar:hover {
+    background: #ffe4e4;
+    color: var(--vermelho-escuro);
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CARROSSEL BOOTSTRAP
+   ===================================================== */
+
+.carrossel-petvida {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel-petvida .carousel-item {
+    height: 450px;
+    position: relative;
+}
+
+.carrossel-petvida .carousel-item img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+.carrossel-petvida .carousel-item::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        transparent 65%
+    );
+
+    pointer-events: none;
+}
+
+.carrossel-petvida .carousel-caption {
+    z-index: 2;
+    bottom: 45px;
+}
+
+.carrossel-petvida .carousel-caption h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.carrossel-petvida .carousel-caption p {
+    font-size: 18px;
+}
+
+.carrossel-petvida .carousel-indicators {
+    z-index: 3;
+}
+
+
+/* =====================================================
+   HERO / PÁGINA INICIAL
+   ===================================================== */
+
+.hero {
+    background: var(--rosa-claro);
+    padding: 70px 30px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-destaque {
+    color: var(--vermelho);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-texto h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin: 18px 0;
+}
+
+.hero-texto p {
+    color: var(--cinza);
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-width: 520px;
+
+    border-radius: var(--raio);
+    object-fit: cover;
+}
+
+.hero-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* BOTÕES PRINCIPAIS */
+
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.botao-principal {
+    background: var(--vermelho);
+    color: var(--branco);
+}
+
+.botao-principal:hover {
+    background: var(--vermelho-escuro);
+    color: var(--branco);
+
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    border: 2px solid var(--vermelho);
+
+    color: var(--vermelho);
+    background: transparent;
+}
+
+.botao-secundario:hover {
+    background: var(--vermelho);
+    color: var(--branco);
+}
+
+
+/* =====================================================
+   LAYOUT E TÍTULOS
+   ===================================================== */
+
+.container-petvida {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 50px 30px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-pagina h1,
+.titulo-pagina h2 {
+    color: var(--vermelho);
+
+    font-size: 32px;
+    line-height: 1.25;
+
+    margin-bottom: 12px;
+}
+
+.titulo-pagina p {
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.secao {
+    padding: 55px 30px;
+}
+
+.secao:nth-of-type(even) {
+    background: var(--cinza-claro);
+}
+
+
+/* =====================================================
+   PRODUTOS
+   ===================================================== */
+
+.secao-produtos {
+    padding: 55px 30px;
+}
+
+.categoria-produtos {
+    margin: 0 auto 45px;
+    max-width: 1200px;
+}
+
+.categoria-produtos h2 {
+    color: var(--vermelho);
+
+    margin-bottom: 22px;
+    font-size: 26px;
+}
+
+.grid-produtos {
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.secao-produtos .grid-produtos {
+    grid-template-columns: repeat(
+        3,
+        minmax(0, 1fr)
+    );
+}
+
+
+/* CARD DE PRODUTO */
+
+.card-produto {
+    background: var(--branco);
+
+    border: 1px solid #e8e8e8;
+    border-radius: var(--raio);
+
+    overflow: hidden;
+
+    box-shadow: var(--sombra);
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+
+    height: 100%;
+}
+
+.card-produto:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+.card-produto img {
+    width: 100%;
+    height: 230px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.card-produto-conteudo {
+    padding: 20px;
+}
+
+.card-produto h2,
+.card-produto h3 {
+    color: var(--vermelho);
+
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-produto p {
+    color: var(--cinza);
+    margin-bottom: 12px;
+}
+
+.preco-produto,
+.preco {
+    color: var(--vermelho-escuro);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   SERVIÇOS
+   ===================================================== */
+
+.secao-servicos {
+    padding: 50px 30px;
+}
+
+.secao-servicos > .titulo-pagina,
+.secao-servicos > h1 {
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-servicos,
+.grid-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+
+    gap: 25px;
+}
+
+
+/* CARD DE SERVIÇO */
+
+.card-servico {
+    background: var(--branco);
+
+    border-radius: var(--raio);
+
+    box-shadow: var(--sombra);
+
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-servico img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-servico-conteudo {
+    padding: 20px;
+}
+
+.card-servico h2,
+.card-servico h3 {
+    color: var(--vermelho);
+    margin-bottom: 10px;
+}
+
+.card-servico p {
+    color: var(--cinza);
+}
+
+.secao-servicos .card-produto {
+    height: 100%;
+}
+
+.secao-servicos .card-produto img {
+    height: 230px;
+}
+
+.secao-servicos .card-produto-conteudo {
+    padding: 20px;
+}
+
+
+/* =====================================================
+   CONTATO E AJUDA
+   ===================================================== */
+
+.grid-contato,
+.grid-ajuda {
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.info-contato,
+.card-ajuda {
+    background: var(--branco);
+
+    border-radius: var(--raio);
+
+    box-shadow: var(--sombra);
+
+    padding: 25px;
+    height: 100%;
+}
+
+.info-contato h2,
+.card-ajuda h2,
+.card-ajuda h3 {
+    color: var(--vermelho);
+    margin-bottom: 12px;
+}
+
+.info-contato p,
+.card-ajuda p {
+    color: var(--cinza);
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   BOTÕES E CHAMADAS
+   ===================================================== */
+
+.botao {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background: var(--vermelho);
+    color: var(--branco);
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.botao:hover {
+    background: var(--vermelho-escuro);
+    color: var(--branco);
+}
+
+.chamada {
+    background: var(--rosa-claro);
+
+    text-align: center;
+
+    padding: 45px 30px;
+}
+
+.chamada h2 {
+    color: var(--vermelho);
+    margin-bottom: 12px;
+}
+
+.chamada p {
+    color: var(--cinza);
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+.rodape,
+footer {
+    background: var(--preto);
+    color: var(--branco);
+
+    padding: 35px 30px;
+}
+
+.rodape-container,
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.rodape h2,
+.rodape h3,
+footer h2,
+footer h3 {
+    color: var(--branco);
+    margin-bottom: 12px;
+}
+
+.rodape p,
+footer p {
+    color: #d5d5d5;
+    margin-bottom: 6px;
+}
+
+.rodape a,
+footer a {
+    color: #ffdede;
+}
+
+.rodape a:hover,
+footer a:hover {
+    color: var(--branco);
+}
+
+.rodape-copy,
+.copyright {
+    text-align: center;
+
+    border-top: 1px solid #444;
+
+    margin-top: 25px;
+    padding-top: 18px;
+
+    color: #c9c9c9;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PÁGINA DE AGENDAMENTO
+   ===================================================== */
+
+.formulario-agendamento {
+    max-width: 850px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    background-color: var(--branco);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+
+/* GRUPOS DO FORMULÁRIO */
+
+.grupo-formulario {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.grupo-formulario h2 {
+    color: var(--vermelho);
+
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+
+/* CAMPOS */
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    background-color: var(--branco);
+
+    transition: 0.3s;
+}
+
+
+/* FOCUS */
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+
+    border-color: var(--vermelho);
+
+    box-shadow: 0 0 0 3px rgba(
+        217,
+        39,
+        50,
+        0.12
+    );
+}
+
+
+/* TEXTAREA */
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+
+/* BOTÃO DO FORMULÁRIO */
+
+.botao-formulario {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao-formulario button {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 15px;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESUMO DO AGENDAMENTO
+   ===================================================== */
+
+.resumo-agendamento {
+    max-width: 850px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: var(--branco);
+
+    border: 2px solid #28a745;
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+    animation: aparecerResumo 0.5s ease;
+}
+
+.resumo-agendamento h2 {
+    color: #28a745;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.resumo-agendamento p {
+    line-height: 1.8;
+
+    color: var(--preto);
+    font-size: 16px;
+}
+
+
+/* VALOR TOTAL */
+
+.valor-total {
+    display: block;
+
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: var(--rosa-claro);
+    color: var(--vermelho);
+
+    font-size: 22px;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecerResumo {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE — TABLET
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero-container {
+        gap: 30px;
+    }
+
+    .hero-texto h1 {
+        font-size: 36px;
+    }
+
+    .secao-produtos .grid-produtos {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE — CELULAR
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    .navbar {
+        padding: 15px 18px;
+
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 10px 16px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .botao-agendar {
+        padding: 9px 18px;
+    }
+
+
+    /* MENU SEM CLASSES ESPECÍFICAS */
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    /* CARROSSEL */
+
+    .carrossel-petvida .carousel-item,
+    .carrossel-petvida .carousel-item img {
+        height: 280px;
+    }
+
+    .carrossel-petvida .carousel-caption {
+        bottom: 22px;
+    }
+
+    .carrossel-petvida .carousel-caption h2 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+
+    .carrossel-petvida .carousel-caption p {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .hero-texto h1 {
+        font-size: 30px;
+    }
+
+    .hero-texto p {
+        font-size: 16px;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+    }
+
+    .hero-imagem img {
+        max-width: 100%;
+    }
+
+
+    /* LAYOUT */
+
+    .container-petvida {
+        padding: 35px 20px;
+    }
+
+    .titulo-pagina {
+        margin-bottom: 25px;
+    }
+
+    .titulo-pagina h1,
+    .titulo-pagina h2 {
+        font-size: 27px;
+    }
+
+    .secao,
+    .secao-produtos,
+    .secao-servicos {
+        padding: 35px 20px;
+    }
+
+
+    /* PRODUTOS */
+
+    .categoria-produtos {
+        margin-bottom: 30px;
+    }
+
+    .categoria-produtos h2 {
+        font-size: 23px;
+    }
+
+
+    /* GRIDS */
+
+    .grid-produtos,
+    .secao-produtos .grid-produtos,
+    .lista-servicos,
+    .grid-servicos,
+    .grid-contato,
+    .grid-ajuda {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CARDS */
+
+    .card-produto img,
+    .card-servico img,
+    .secao-servicos .card-produto img {
+        height: 210px;
+    }
+
+    .card-produto-conteudo,
+    .card-servico-conteudo {
+        padding: 17px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape,
+    footer {
+        padding: 30px 20px;
+    }
+
+    .rodape-container,
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* FORMULÁRIO */
+
+    .formulario-agendamento {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+
+    .grupo-formulario h2 {
+        font-size: 21px;
+    }
+
+    .campo-formulario input,
+    .campo-formulario select,
+    .campo-formulario textarea {
+        font-size: 16px;
+    }
+
+
+    /* RESUMO */
+
+    .resumo-agendamento {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .resumo-agendamento h2 {
+        font-size: 23px;
+    }
+
+    .valor-total {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE — TELAS PEQUENAS
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    header nav {
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    .hero-texto h1 {
+        font-size: 27px;
+    }
+
+    .titulo-pagina h1,
+    .titulo-pagina h2 {
+        font-size: 24px;
+    }
+
+    .formulario-agendamento {
+        padding: 17px;
+    }
+
+    .resumo-agendamento {
+        padding: 17px;
+    }
+
+}

@@ -1,68 +1,256 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - PetVida</title>
+
+    <title>Serviços | PetVida</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>PetVida - Petshop</h1>
-        <p>O cuidado que seu melhor amigo merece!</p>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contato.html">Contato</a> |
-            <a href="ajuda.html">Ajuda</a>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Pet<span>Vida</span>
+            </a>
+
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html" class="ativo">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+
+            <a href="agendamento.html" class="botao-agendar">
+                Agendar
+            </a>
+
         </nav>
+
     </header>
 
-    <main>
-        <h2>Nossos Serviços</h2>
 
-        <section>
-            <h3>Banho</h3>
-            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=400"
-                 alt="Cão recebendo cuidados de higiene" width="250">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-petvida">
 
-            <p>Banho completo com produtos adequados para seu pet, incluindo limpeza e secagem.</p>
-            <p>Valor sem tele-busca: R$ 50,00</p>
-            <p>Valor com tele-busca: R$ 70,00</p>
-        </section>
+        <section class="secao-servicos">
 
-        <section>
-            <h3>Tosa</h3>
-            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400"
-                 alt="Cachorro bem cuidado" width="250">
+            <h1>Conheça nossos serviços</h1>
 
-            <p>Tosa higiênica ou completa para manter seu pet confortável e bem cuidado.</p>
-            <p>Valor sem tele-busca: R$ 70,00</p>
-            <p>Valor com tele-busca: R$ 90,00</p>
-        </section>
+            <p>
+                A PetVida oferece serviços de cuidado, higiene e bem-estar
+                para seu animal de estimação, sempre com carinho e atenção.
+            </p>
 
-        <section>
-            <h3>Banho e Tosa</h3>
-            <p>Serviço completo de higiene e estética para seu animal.</p>
-            <p>Valor sem tele-busca: R$ 100,00</p>
-            <p>Valor com tele-busca: R$ 120,00</p>
-        </section>
 
-        <section>
-            <h3>Tele-busca</h3>
-            <p>Buscamos seu pet em casa e o levamos de volta após o atendimento.</p>
-            <p>O serviço de tele-busca está disponível mediante agendamento.</p>
+            <!-- SERVIÇOS -->
+            <div class="lista-servicos">
+
+
+                <!-- BANHO -->
+                <article class="card-produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500"
+                        alt="Cachorro recebendo banho e cuidados de higiene">
+
+                    <div class="card-produto-conteudo">
+
+                        <h2>Banho</h2>
+
+                        <p>
+                            Serviço de banho para manter seu pet limpo,
+                            cheiroso e saudável, utilizando produtos
+                            adequados para o bem-estar animal.
+                        </p>
+
+                        <p class="preco">
+                            <strong>R$ 50,00</strong>
+                        </p>
+
+                        <p>
+                            Com tele-busca:
+                            <strong>R$ 70,00</strong>
+                        </p>
+
+                        <a href="agendamento.html" class="botao-agendar">
+                            Agendar banho
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TOSA -->
+                <article class="card-produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500"
+                        alt="Cachorro recebendo cuidados de tosa">
+
+                    <div class="card-produto-conteudo">
+
+                        <h2>Tosa</h2>
+
+                        <p>
+                            Serviço de tosa realizado para proporcionar
+                            conforto, higiene e cuidado com a aparência
+                            do seu animal de estimação.
+                        </p>
+
+                        <p class="preco">
+                            <strong>R$ 70,00</strong>
+                        </p>
+
+                        <p>
+                            Com tele-busca:
+                            <strong>R$ 90,00</strong>
+                        </p>
+
+                        <a href="agendamento.html" class="botao-agendar">
+                            Agendar tosa
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BANHO E TOSA -->
+                <article class="card-produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500"
+                        alt="Animal recebendo cuidados de higiene e estética">
+
+                    <div class="card-produto-conteudo">
+
+                        <h2>Banho e Tosa</h2>
+
+                        <p>
+                            Serviço completo de higiene e estética
+                            para proporcionar conforto e bem-estar
+                            ao seu animal.
+                        </p>
+
+                        <p class="preco">
+                            <strong>R$ 100,00</strong>
+                        </p>
+
+                        <p>
+                            Com tele-busca:
+                            <strong>R$ 120,00</strong>
+                        </p>
+
+                        <a href="agendamento.html" class="botao-agendar">
+                            Agendar banho e tosa
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TELE-BUSCA -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Servi%C3%A7o%20Tele-busca%20PetVida%20em%20A%C3%A7%C3%A3o.png"
+                        alt="Veículo PetVida realizando tele-busca de animais">
+
+                    <div class="card-produto-conteudo">
+
+                        <h2>Tele-busca</h2>
+
+                        <p>
+                            Buscamos seu animal de estimação em sua residência
+                            e o levamos até a PetVida para realizar o serviço
+                            contratado.
+                        </p>
+
+                        <p>
+                            O serviço de tele-busca possui valores adicionais
+                            conforme o serviço escolhido.
+                        </p>
+
+                        <a href="agendamento.html" class="botao-agendar">
+                            Solicitar tele-busca
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>PetVida - Todos os direitos reservados.</p>
-        <p>Contato: contato@petvida.com.br</p>
-        <p>Projeto acadêmico - Fundamentos de Sistemas Web</p>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div class="rodape-info">
+
+                <h2>PetVida</h2>
+
+                <p>
+                    Cuidando do seu pet com carinho,
+                    qualidade e dedicação.
+                </p>
+
+            </div>
+
+
+            <div class="rodape-contato">
+
+                <h3>Contato</h3>
+
+                <p>Telefone: (51) 99999-0000</p>
+
+                <p>Email: contato@petvida.com.br</p>
+
+                <p>
+                    Avenida dos Pets, 100 - Porto Alegre, RS
+                </p>
+
+            </div>
+
+
+            <div class="rodape-horarios">
+
+                <h3>Horário de funcionamento</h3>
+
+                <p>Segunda a sexta: 9h às 18h</p>
+
+                <p>Sábado: 9h às 15h</p>
+
+                <p>Domingo: fechado</p>
+
+            </div>
+
+        </div>
+
+
+        <p class="rodape-copy">
+            &copy; 2026 PetVida. Todos os direitos reservados.
+        </p>
+
     </footer>
 
 </body>
+
 </html>

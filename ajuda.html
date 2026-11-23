@@ -1,53 +1,200 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajuda - PetVida</title>
+
+    <title>Ajuda | PetVida</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-```
-<header>
-    <h1>PetVida - Petshop</h1>
-    <p>O cuidado que seu melhor amigo merece!</p>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="produtos.html">Produtos</a> |
-        <a href="servicos.html">Serviços</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="ajuda.html">Ajuda</a>
-    </nav>
-</header>
+        <nav class="navbar">
 
-<main>
-    <h2>Ajuda e informações</h2>
+            <a href="index.html" class="logo">
+                Pet<span>Vida</span>
+            </a>
 
-    <p>Bem-vindo ao guia de utilização do site PetVida.</p>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="ajuda.html" class="ativo">Ajuda</a></li>
+            </ul>
 
-    <h3>Como visualizar os produtos</h3>
-    <p>Acesse a página Produtos pelo menu de navegação. Nela você encontrará acessórios, rações e produtos de higiene, com imagens, descrições e preços.</p>
+            <a href="agendamento.html" class="botao-agendar">
+                Agendar
+            </a>
 
-    <h3>Como consultar os serviços</h3>
-    <p>Acesse a página Serviços para consultar os valores de banho, tosa e banho e tosa, com ou sem tele-busca.</p>
+        </nav>
 
-    <h3>Como entrar em contato</h3>
-    <p>Na página Contato estão disponíveis o telefone, e-mail, endereço e horário de atendimento do petshop.</p>
+    </header>
 
-    <h3>Como navegar pelo site</h3>
-    <p>Utilize os links do cabeçalho para acessar as diferentes páginas do PetVida.</p>
 
-    <h3>Observação</h3>
-    <p>Esta versão é demonstrativa. As compras e os agendamentos ainda não são realizados online.</p>
-</main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-petvida">
 
-<footer>
-    <p>PetVida - Todos os direitos reservados.</p>
-    <p>Contato: contato@petvida.com.br</p>
-</footer>
-```
+
+        <!-- TÍTULO -->
+        <section class="titulo-pagina">
+
+            <h1>Ajuda e informações</h1>
+
+            <p>
+                Bem-vindo ao guia de utilização do site PetVida.
+                Aqui você encontrará informações sobre como navegar
+                e utilizar as páginas do nosso petshop.
+            </p>
+
+        </section>
+
+
+        <!-- COMO VISUALIZAR PRODUTOS -->
+        <section class="categoria-produtos">
+
+            <article class="card-produto">
+
+                <div class="card-produto-conteudo">
+
+                    <h2>Como visualizar os produtos</h2>
+
+                    <p>
+                        Acesse a página Produtos pelo menu de navegação.
+                        Nela você encontrará acessórios, rações e produtos
+                        de higiene, com imagens, descrições e preços.
+                    </p>
+
+                    <a href="produtos.html" class="botao-principal">
+                        Ver produtos
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- COMO CONSULTAR SERVIÇOS -->
+        <section class="categoria-produtos">
+
+            <article class="card-produto">
+
+                <div class="card-produto-conteudo">
+
+                    <h2>Como consultar os serviços</h2>
+
+                    <p>
+                        Acesse a página Serviços para consultar os valores
+                        de banho, tosa e banho e tosa, com ou sem tele-busca.
+                    </p>
+
+                    <a href="servicos.html" class="botao-principal">
+                        Ver serviços
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- COMO ENTRAR EM CONTATO -->
+        <section class="categoria-produtos">
+
+            <article class="card-produto">
+
+                <div class="card-produto-conteudo">
+
+                    <h2>Como entrar em contato</h2>
+
+                    <p>
+                        Na página Contato estão disponíveis o telefone,
+                        e-mail, endereço e horário de atendimento do petshop.
+                    </p>
+
+                    <a href="contato.html" class="botao-principal">
+                        Entrar em contato
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- COMO NAVEGAR -->
+        <section class="categoria-produtos">
+
+            <article class="card-produto">
+
+                <div class="card-produto-conteudo">
+
+                    <h2>Como navegar pelo site</h2>
+
+                    <p>
+                        Utilize os links do cabeçalho para acessar
+                        as diferentes páginas do PetVida.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- OBSERVAÇÃO -->
+        <section class="categoria-produtos">
+
+            <article class="card-produto">
+
+                <div class="card-produto-conteudo">
+
+                    <h2>Observação</h2>
+
+                    <p>
+                        Esta versão é demonstrativa. As compras e os
+                        agendamentos ainda não são realizados online.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <p>
+            PetVida - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Contato: contato@petvida.com.br
+        </p>
+
+        <p>
+            Projeto acadêmico - Fundamentos de Sistemas Web
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>

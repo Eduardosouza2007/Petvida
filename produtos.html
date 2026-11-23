@@ -1,92 +1,268 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - PetVida</title>
+
+    <title>Produtos | PetVida</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-```
-<header>
-    <h1>PetVida - Petshop</h1>
-    <p>O cuidado que seu melhor amigo merece!</p>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
 
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="produtos.html">Produtos</a> |
-        <a href="servicos.html">Serviços</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="ajuda.html">Ajuda</a>
-    </nav>
-</header>
+        <nav class="navbar">
 
-<main>
-    <h2>Nossos Produtos</h2>
+            <a href="index.html" class="logo">
+                Pet<span>Vida</span>
+            </a>
 
-    <section>
-        <h3>Acessórios</h3>
+            <ul class="menu">
 
-        <article>
-            <h4>Cama para cães</h4>
-            <img src="https://www.bopets.be/images/honden-hero-bopets.png" alt="Cama confortável para cães" width="300">
-            <p>Cama macia e confortável para seu pet descansar.</p>
-            <p>Valor: R$ 89,90</p>
-        </article>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
 
-        <article>
-            <h4>Brinquedo para pets</h4>
-            <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=400" alt="Cachorro com brinquedo" width="300">
-            <p>Brinquedo para diversão e entretenimento do seu animal.</p>
-            <p>Valor: R$ 24,90</p>
-        </article>
-    </section>
+                <li>
+                    <a href="produtos.html" class="ativo">Produtos</a>
+                </li>
 
-    <section>
-        <h3>Rações</h3>
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
 
-        <article>
-            <h4>Ração para cães adultos</h4>
-            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400" alt="Ração para cães" width="300">
-            <p>Ração nutritiva para cães adultos de pequeno e médio porte.</p>
-            <p>Valor: R$ 119,90</p>
-        </article>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
 
-        <article>
-            <h4>Ração para gatos</h4>
-            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400" alt="Produto para alimentação de gatos" width="300">
-            <p>Alimento completo para gatos adultos.</p>
-            <p>Valor: R$ 79,90</p>
-        </article>
-    </section>
+                <li>
+                    <a href="ajuda.html">Ajuda</a>
+                </li>
 
-    <section>
-        <h3>Higiene e Limpeza</h3>
+            </ul>
 
-        <article>
-            <h4>Tapete higiênico</h4>
-            <img src="https://www.lordsandlabradors.co.uk/cdn/shop/files/LL-PP-MED-lords-and-labradors-medium-breed-puppy-pack-studio.jpg?v=1690986024" alt="Tapetes higiênicos para cães" width="300">
-            <p>Tapete absorvente para auxiliar na higiene do ambiente.</p>
-            <p>Valor: R$ 49,90</p>
-        </article>
+            <a href="agendamento.html" class="botao-agendar">
+                Agendar
+            </a>
 
-        <article>
-            <h4>Shampoo para pets</h4>
-            <img src="https://petspotshop.com/cdn/shop/collections/best-seller-items-for-pet-supplies.png?v=1771057649" alt="Shampoo e produtos de higiene pet" width="300">
-            <p>Shampoo especial para limpeza e cuidado dos pelos.</p>
-            <p>Valor: R$ 32,90</p>
-        </article>
-    </section>
+        </nav>
 
-</main>
+    </header>
 
-<footer>
-    <p>PetVida - Todos os direitos reservados.</p>
-    <p>Contato: contato@petvida.com.br</p>
-    <p>Projeto acadêmico - Fundamentos de Sistemas Web</p>
-</footer>
-```
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-petvida">
+
+        <!-- TÍTULO -->
+        <section class="titulo-pagina">
+
+            <h2>Nossos Produtos</h2>
+
+            <p>
+                Confira os produtos disponíveis para cuidar do seu melhor amigo.
+            </p>
+
+        </section>
+
+
+        <!-- ACESSÓRIOS -->
+        <section class="categoria-produtos">
+
+            <h2>Acessórios</h2>
+
+            <div class="grid-produtos">
+
+                <!-- COLEIRA -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Captura de tela 2026-11-20 184031.png"
+                        alt="Cachorro usando coleira azul">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Coleira para cães</h3>
+
+                        <p>
+                            Coleira confortável e resistente para passeios
+                            seguros com seu pet.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 39,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BRINQUEDO -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Captura de tela 2026-11-20 185333.png"
+                        alt="Cachorro brincando com brinquedo de borracha">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Brinquedo para pets</h3>
+
+                        <p>
+                            Brinquedo divertido para estimular a atividade
+                            física e mental do seu animal.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 24,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RAÇÕES -->
+        <section class="categoria-produtos">
+
+            <h2>Rações</h2>
+
+            <div class="grid-produtos">
+
+                <!-- RAÇÃO PARA CÃES -->
+                <article class="card-produto">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=500&q=80"
+                        alt="Tigela com ração para cães">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Ração para cães</h3>
+
+                        <p>
+                            Alimentação nutritiva e balanceada para
+                            manter seu cachorro saudável.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 79,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RAÇÃO PARA GATOS -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Captura de tela 2026-11-20 184154.png"
+                        alt="Embalagem de ração para gatos">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Ração para gatos</h3>
+
+                        <p>
+                            Alimento de qualidade para proporcionar
+                            saúde e bem-estar ao seu felino.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 59,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- HIGIENE E LIMPEZA -->
+        <section class="categoria-produtos">
+
+            <h2>Higiene e Limpeza</h2>
+
+            <div class="grid-produtos">
+
+                <!-- SHAMPOO -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Captura de tela 2026-11-20 185155.png"
+                        alt="Frasco de shampoo Pet Clean para pele sensível">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Shampoo Pet</h3>
+
+                        <p>
+                            Shampoo especial para manter a pelagem
+                            limpa, macia e saudável.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 29,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAMA PARA CÃES -->
+                <article class="card-produto">
+
+                    <img
+                        src="img/Captura de tela 2026-11-20 182102.png"
+                        alt="Cachorro descansando em cama confortável">
+
+                    <div class="card-produto-conteudo">
+
+                        <h3>Cama para cães</h3>
+
+                        <p>
+                            Cama macia, confortável e aconchegante
+                            para proporcionar descanso e bem-estar ao seu pet.
+                        </p>
+
+                        <p class="preco-produto">
+                            R$ 89,90
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <p>
+            &copy; 2026 PetVida - Todos os direitos reservados.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
