@@ -1201,3 +1201,21 @@ footer a:hover {
     }
 
 }
+/* BOTÕES DE COMPRA */
+.botao-comprar {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
